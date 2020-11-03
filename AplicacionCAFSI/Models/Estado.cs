@@ -10,20 +10,20 @@ namespace AplicacionCAFSI.Models
         public int EstadoID { get; set; }
         public string NombreEstado { get; set; }
 
-        public virtual ICollection<Categoria> Categoria { get; set; }
-        public virtual ICollection<TipoActivo> TipoBaja { get; set; }
-        public virtual ICollection<Marca> Marca { get; set; }
-        public virtual ICollection<Documento> Documento { get; set; }
-        public virtual ICollection<Novedad> Novedad { get; set; }
-        public virtual ICollection<TipoNovedad> TipoNovedad { get; set; }
-        public virtual ICollection<Movimiento> Movimiento { get; set; }
-        public virtual ICollection<TipoMovimiento> TipoMovimiento { get; set; }
-        public virtual ICollection<Area> Area { get; set; }
-        public virtual ICollection<TipoIdentificacion> TipoIdentificacion { get; set; }
-        public virtual ICollection<Genero> Genero { get; set; }
-        public virtual ICollection<MenuPerfil> MenuPerfil { get; set; }
-        public virtual ICollection<Perfil> Perfil { get; set; }
-        public virtual ICollection<FormularioPerfil> FormularioPerfil { get; set; }
-        public virtual ICollection<Usuario> Usuario { get; set; }
+        //public virtual ICollection<Categoria> Categorias { get; set; }
+        //public virtual ICollection<TipoActivo> TipoBajas { get; set; }
+        //public virtual ICollection<Marca> Marcas { get; set; }
+        public virtual ICollection<Documento> Documentos { get; set; }
+        public virtual ICollection<Novedad> Novedades { get; set; }
+        //public virtual ICollection<TipoNovedad> TipoNovedades { get; set; }
+        //public virtual ICollection<Movimiento> Movimientos { get; set; }
+        public virtual ICollection<TipoMovimiento> TipoMovimientos { get; set; }
+        public virtual ICollection<Area> Areas { get; set; }
+        //public virtual ICollection<TipoIdentificacion> TipoIdentificaciones { get; set; }
+        //public virtual ICollection<Genero> Generos { get; set; }
+        public virtual ICollection<MenuPerfil> MenuPerfiles { get; set; }
+        //public virtual ICollection<Perfil> Perfiles { get; set; }
+        public virtual ICollection<FormularioPerfil> FormularioPerfiles { get; set; }
+        //public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

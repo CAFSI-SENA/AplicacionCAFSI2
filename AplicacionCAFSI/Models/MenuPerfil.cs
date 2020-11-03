@@ -7,6 +7,7 @@ namespace AplicacionCAFSI.Models
 {
     public class MenuPerfil
     {
+        public int MenuPerfilID { get; set; }
         public int MenuID { get; set; }
         public int PerfilID { get; set; }
         public int EstadoID { get; set; }

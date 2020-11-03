@@ -7,6 +7,7 @@ namespace AplicacionCAFSI.Models
 {
     public class FormularioPerfil
     {
+        public int ID { get; set; }
         public int PerfilID { get; set; }
         public int FormularioID { get; set; }
         public int EstadoID { get; set; }

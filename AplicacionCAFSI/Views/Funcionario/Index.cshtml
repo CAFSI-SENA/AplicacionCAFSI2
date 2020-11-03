@@ -1,0 +1,87 @@
+﻿@model IEnumerable<AplicacionCAFSI.Models.Funcionario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Area.NombreArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genero.NombreGenero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoIdentificacion.NombreTipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Identificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vigente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area.NombreArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genero.NombreGenero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoIdentificacion.NombreTipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Identificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vigente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaCreacion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FuncionarioID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FuncionarioID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FuncionarioID })
+        </td>
+    </tr>
+}
+
+</table>

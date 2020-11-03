@@ -12,9 +12,9 @@ namespace AplicacionCAFSI.Models
         public int EstadoID { get; set; }
         public DateTime FechaCreacion { get; set; }
 
-        public virtual Estado Estado { get; set; }
-        public virtual ICollection<Usuario> Usuario { get; set; }
-        public virtual ICollection<MenuPerfil> MenuPerfil { get; set; }
-        public virtual ICollection<FormularioPerfil> FormularioPerfil { get; set; }
+        //public virtual Estado Estado { get; set; }
+        public virtual ICollection<Usuario> Usuarios { get; set; }
+        public virtual ICollection<MenuPerfil> MenuPerfiles { get; set; }
+        public virtual ICollection<FormularioPerfil> FormularioPerfiles { get; set; }
     }
 }

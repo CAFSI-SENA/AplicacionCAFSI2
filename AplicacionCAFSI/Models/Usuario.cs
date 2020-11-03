@@ -15,11 +15,11 @@ namespace AplicacionCAFSI.Models
         public DateTime FechaCreacion { get; set; }
         public int EstadoID { get; set; }
 
-        public virtual Funcionario Funcionario { get; set; }
+        //public virtual Funcionario Funcionario { get; set; }
         public virtual Perfil Perfil { get; set; }
-        public virtual Estado Estado { get; set; }
-        public virtual ICollection<Documento> Documento { get; set; }
-        public virtual ICollection<Novedad> Novedad { get; set; }
+        //public virtual Estado Estado { get; set; }
+        public virtual ICollection<Documento> Documentos { get; set; }
+        public virtual ICollection<Novedad> Novedades { get; set; }
 
     }
 }

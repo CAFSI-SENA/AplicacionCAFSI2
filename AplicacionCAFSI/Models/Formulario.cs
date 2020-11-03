@@ -11,6 +11,6 @@ namespace AplicacionCAFSI.Models
         public string NombreFormulario { get; set; }
         public DateTime FechaCreacion { get; set; }
 
-        public virtual ICollection<FormularioPerfil> FormularioPerfil { get; set; }
+        public virtual ICollection<FormularioPerfil> FormularioPerfiles { get; set; }
     }
 }

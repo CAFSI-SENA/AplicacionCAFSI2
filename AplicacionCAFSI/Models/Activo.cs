@@ -23,8 +23,8 @@ namespace AplicacionCAFSI.Models
         public virtual Marca Marca { get; set; }
         public virtual TipoActivo TipoActivo { get; set; }
 
-        public virtual ICollection<Novedad> Novedad { get; set; }
-        public virtual ICollection<Movimiento> Movimiento { get; set; }
-        public virtual ICollection<DetalleActivo> DetalleActivo { get; set; }
+        public virtual ICollection<Novedad> Novedades { get; set; }
+        //public virtual ICollection<Movimiento> Movimientos { get; set; }
+        public virtual ICollection<DetalleActivo> DetalleActivos { get; set; }
     }
 }

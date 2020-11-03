@@ -12,7 +12,7 @@ namespace AplicacionCAFSI.Models
         public int EstadoID { get; set; }
         public DateTime FechaCreacion { get; set; }
 
-        public virtual Estado Estado { get; set; }
-        public virtual ICollection<Activo> Activo { get; set; }
+        //public virtual Estado Estado { get; set; }
+        public virtual ICollection<Activo> Activos { get; set; }
     }
 }

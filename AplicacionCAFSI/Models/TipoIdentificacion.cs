@@ -9,9 +9,10 @@ namespace AplicacionCAFSI.Models
     {
         public int TipoIdentificacionID { get; set; }
         public string NombreTipo { get; set; }
+        public string Sigla { get; set; }
         public int EstadoID { get; set; }
 
-        public virtual Estado Estado { get; set; }
-        public virtual ICollection<Funcionario> Funcionario { get; set; }
+        //public virtual Estado Estado { get; set; }
+        public virtual ICollection<Funcionario> Funcionarios { get; set; }
     }
 }

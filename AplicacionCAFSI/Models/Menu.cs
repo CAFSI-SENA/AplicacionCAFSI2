@@ -11,6 +11,6 @@ namespace AplicacionCAFSI.Models
         public string NombreMenu { get; set; }
         public DateTime FechaCreacion { get; set; }
 
-        public virtual ICollection<MenuPerfil> MenuPerfil { get; set; }
+        public virtual ICollection<MenuPerfil> MenuPerfiles { get; set; }
     }
 }

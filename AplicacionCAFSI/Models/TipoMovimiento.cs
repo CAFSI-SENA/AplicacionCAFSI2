@@ -10,6 +10,6 @@ namespace AplicacionCAFSI.Models
         public int TipoMovimientoID { get; set; }
         public string NombreTipo { get; set; }
 
-        public virtual ICollection<Movimiento> Movimiento { get; set; }
+        public virtual ICollection<Movimiento> Movimientos { get; set; }
     }
 }

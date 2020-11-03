@@ -27,7 +27,7 @@ namespace AplicacionCAFSI.Models
         public virtual Area Area { get; set; }
         public virtual Genero Genero { get; set; }
 
-        public virtual ICollection<Movimiento> Movimiento { get; set; }
-
+        //public virtual ICollection<Movimiento> Movimientos { get; set; }
+        //public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

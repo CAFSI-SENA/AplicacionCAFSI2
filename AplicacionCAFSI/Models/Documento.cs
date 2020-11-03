@@ -16,7 +16,7 @@ namespace AplicacionCAFSI.Models
         public int EstadoID { get; set; }
         public int UsuarioID { get; set; }
 
-        public virtual Funcionario Funcionario { get; set; }
+        //public virtual Funcionario Funcionario { get; set; }
         public virtual Movimiento Movimiento { get; set; }
         public virtual Estado Estado { get; set; }
         public virtual Usuario Usuario { get; set; }

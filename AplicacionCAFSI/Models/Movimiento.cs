@@ -17,8 +17,8 @@ namespace AplicacionCAFSI.Models
         public int EstadoID { get; set; }
 
         public virtual TipoMovimiento TipoMovimiento { get; set; }
-        public virtual Funcionario Funcionario { get; set; }
-        public virtual Activo Activo { get; set; }
-        public virtual Estado Estado { get; set; }
+        //public virtual Funcionario Funcionario { get; set; }
+        //public virtual Activo Activo { get; set; }
+        //public virtual Estado Estado { get; set; }
     }
 }

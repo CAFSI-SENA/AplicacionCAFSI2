@@ -11,7 +11,7 @@ namespace AplicacionCAFSI.Models
         public string NombreGenero { get; set; }
         public int EstadoID { get; set; }
 
-        public virtual Estado Estado { get; set; }
-        public virtual ICollection<Funcionario> Funcionario { get; set; }
+        //public virtual Estado Estado { get; set; }
+        public virtual ICollection<Funcionario> Funcionarios { get; set; }
     }
 }
