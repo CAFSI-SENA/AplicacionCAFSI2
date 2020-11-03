@@ -1,0 +1,66 @@
+﻿@model AplicacionCAFSI.Models.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Perfil.NombrePerfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Perfil.NombrePerfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contrasenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contrasenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuncionarioID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuncionarioID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UsuarioID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

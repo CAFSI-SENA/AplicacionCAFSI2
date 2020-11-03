@@ -1,0 +1,90 @@
+﻿@model AplicacionCAFSI.Models.Activo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Activo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria.NombreCategoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.NombreCategoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado.NombreEstado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado.NombreEstado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca.NombreMarca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca.NombreMarca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoActivo.NombreTipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoActivo.NombreTipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreActivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreActivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroSerie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroSerie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaAdquisicion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaAdquisicion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ActivoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

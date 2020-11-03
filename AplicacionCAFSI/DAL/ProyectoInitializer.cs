@@ -120,8 +120,8 @@ namespace AplicacionCAFSI.DAL
 
             var movimientos = new List<Movimiento> 
             {
-                new Movimiento{TipoMovimientoID=1,FuncionarioID=1,ActivoID=2,FechaInicio=DateTime.Parse("2020/09/08"),EstadoID=1},
-                new Movimiento{TipoMovimientoID=2,FuncionarioID=2,ActivoID=1,FechaInicio=DateTime.Parse("2020/09/08"),EstadoID=1}
+                new Movimiento{TipoMovimientoID=1,FuncionarioID=1,ActivoID=2,FechaInicio=DateTime.Parse("8/9/2020"),EstadoID=1},
+                new Movimiento{TipoMovimientoID=2,FuncionarioID=2,ActivoID=1,FechaInicio=DateTime.Parse("11/9/2020"),EstadoID=1}
             };
             movimientos.ForEach(s => context.Movimientos.Add(s));
             context.SaveChanges();

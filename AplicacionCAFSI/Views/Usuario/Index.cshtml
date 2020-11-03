@@ -1,0 +1,63 @@
+﻿@model IEnumerable<AplicacionCAFSI.Models.Usuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Perfil.NombrePerfil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contrasenia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FuncionarioID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstadoID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Perfil.NombrePerfil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contrasenia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FuncionarioID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaCreacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstadoID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UsuarioID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UsuarioID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UsuarioID })
+        </td>
+    </tr>
+}
+
+</table>

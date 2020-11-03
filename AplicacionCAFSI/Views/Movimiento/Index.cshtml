@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AplicacionCAFSI.Models.Movimiento>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoMovimiento.NombreTipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FuncionarioID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivoID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstadoID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoMovimiento.NombreTipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FuncionarioID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivoID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstadoID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MovimientoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MovimientoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MovimientoID })
+        </td>
+    </tr>
+}
+
+</table>

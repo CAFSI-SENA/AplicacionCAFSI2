@@ -1,0 +1,74 @@
+﻿@model AplicacionCAFSI.Models.Movimiento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movimiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoMovimiento.NombreTipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoMovimiento.NombreTipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuncionarioID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuncionarioID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MovimientoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
